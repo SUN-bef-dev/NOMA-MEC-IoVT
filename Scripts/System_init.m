@@ -65,7 +65,7 @@ end
 
 % NOMA Channel
 Bandwidth = 2*10^6;   % Bandwidth for each group 2MHz
-Sigma_n = 3.981071705534951e-21*Bandwidth;    % Variance of AWGN (W)=-174dBm/Hz
+Sigma_n = 3.981071705534951e-18*Bandwidth;    % Variance of AWGN (W)=-174dBm/Hz
 
 
 beta = abs(randn(M*G,N) + randn(M*G,N)*1i).^2/2;   % Rayleigh fading cofficient  ~CN(0,1)
